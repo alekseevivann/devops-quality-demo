@@ -1,5 +1,4 @@
 class TaskStore:
-    
     def __init__(self):
         self._tasks = []
         self._next_id = 1
@@ -15,7 +14,6 @@ class TaskStore:
 
     def all(self):
         return list(self._tasks)
-
     def complete(self, task_id):
         for task in self._tasks:
             if task["id"] == task_id:
