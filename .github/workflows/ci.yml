@@ -67,8 +67,6 @@ jobs:
   deploy-production:
     needs: [deploy-staging]
     runs-on: ubuntu-latest
-    # В настройках репозитория для окружения production
-    # задаются обязательные рецензенты (ручное подтверждение)
     environment: production
     steps:
       - uses: actions/checkout@v4

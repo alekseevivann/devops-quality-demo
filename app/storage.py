@@ -1,8 +1,8 @@
-"""Простое хранилище задач в памяти (учебный пример)."""
+
 
 
 class TaskStore:
-    """Хранит список задач и выдаёт им последовательные номера."""
+    
 
     def __init__(self):
         self._tasks = []
@@ -11,7 +11,7 @@ class TaskStore:
     def add(self, title):
         title = (title or "").strip()
         if not title:
-            raise ValueError("Название задачи не может быть пустым")
+            raise ValueError("задача")
         task = {"id": self._next_id, "title": title, "done": False}
         self._tasks.append(task)
         self._next_id += 1

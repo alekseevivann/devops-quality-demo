@@ -1,4 +1,4 @@
-"""Небольшой веб-сервис для демонстрации контроля качества в CI/CD."""
+
 from flask import Flask, jsonify, request
 
 from app.storage import TaskStore
