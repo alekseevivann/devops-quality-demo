@@ -1,4 +1,3 @@
-```python
 class TaskStore:
     def __init__(self):
         self._tasks = []
