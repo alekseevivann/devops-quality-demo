@@ -2,7 +2,6 @@ class TaskStore:
     def __init__(self):
         self._tasks = []
         self._next_id = 1
-
     def add(self, title):
         title = (title or "").strip()
         if not title:
@@ -11,7 +10,6 @@ class TaskStore:
         self._tasks.append(task)
         self._next_id += 1
         return task
-
     def all(self):
         return list(self._tasks)
     def complete(self, task_id):
